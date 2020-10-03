@@ -2705,6 +2705,7 @@ void AssemblyWriter::printModule(const Module *M) {
     printEscapedString(M->getSourceFileName(), Out);
     Out << "\"\n";
   }
+  Out << "EXTRA :: This was a tough question.\n";
 
   const std::string &DL = M->getDataLayoutStr();
   if (!DL.empty())
